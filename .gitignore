@@ -3,3 +3,4 @@ Editor/UpmBridge.deps.json*
 Editor/UpmBridge.pdb*
 UpmBridge~/.idea/
 UpmBridge~/obj/
+.idea/*

@@ -23,7 +23,7 @@
 #define CONSTRACTOR_V2
 #elif UNITY_2022_2_0 || UNITY_2022_2_1 || UNITY_2022_2_2 || UNITY_2022_2_3 || UNITY_2022_2_4 || UNITY_2022_2_5 || UNITY_2022_2_6 || UNITY_2022_2_7 || UNITY_2022_2_8  || UNITY_2022_2_9
 #define CONSTRACTOR_V2
-#elif UNITY_2021_3 || UNITY_2022_2 || UNITY_2023_1_OR_NEWER || UNITY_2023_2_OR_NEWER
+#else
 #define CONSTRACTOR_V3
 #endif
 
@@ -56,7 +56,7 @@ namespace Coffee.UpmGitExtension
             : base(packageVersion.GetPackageInfo(), packageVersion.isInstalled)
 #elif CONSTRACTOR_V2
             : base(packageVersion.GetPackageInfo(), packageVersion.isInstalled, packageVersion.isUnityPackage)
-#elif CONSTRACTOR_V3
+#else CONSTRACTOR_V3
             : base(packageVersion.GetPackageInfo(), packageVersion.isInstalled, packageVersion.availableRegistry)
 #endif
         {

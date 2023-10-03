@@ -1,3 +1,7 @@
+## [2.0.4]()
+* forked due to lack of activity
+* 
+
 ## [2.0.3](https://github.com/mob-sakai/UpmGitExtension/compare/2.0.2...2.0.3) (2023-03-16)
 
 
