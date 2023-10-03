@@ -56,7 +56,7 @@ namespace Coffee.UpmGitExtension
             : base(packageVersion.GetPackageInfo(), packageVersion.isInstalled)
 #elif CONSTRACTOR_V2
             : base(packageVersion.GetPackageInfo(), packageVersion.isInstalled, packageVersion.isUnityPackage)
-#else CONSTRACTOR_V3
+#else
             : base(packageVersion.GetPackageInfo(), packageVersion.isInstalled, packageVersion.availableRegistry)
 #endif
         {
